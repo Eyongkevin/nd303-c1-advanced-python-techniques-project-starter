@@ -1,0 +1,33 @@
+ 2020-03-09 18:09:07,594 - DEBUG - START DEBUG
+ 2020-03-09 18:09:07,595 - DEBUG - START DEBUG
+ 2020-03-09 18:09:07,835 - DEBUG - ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'diameter', 'diameter_min_km', 'id', 'is_hazardous', 'is_potentially_hazardous_asteroid', 'name', 'orbits', 'update_orbits']
+ 2020-03-09 18:09:50,823 - DEBUG - START DEBUG
+ 2020-03-09 18:09:50,824 - DEBUG - START DEBUG
+ 2020-03-09 18:09:51,074 - DEBUG - ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'close_approach_date', 'distance', 'miss_distance_kilometers', 'neo_name']
+ 2020-03-09 18:31:33,377 - DEBUG - START DEBUG
+ 2020-03-09 18:31:33,381 - DEBUG - START DEBUG
+ 2020-03-09 18:31:33,618 - DEBUG - ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'close_approach_date', 'distance', 'miss_distance_kilometers', 'neo_name']
+ 2020-03-09 18:44:23,278 - DEBUG - START DEBUG
+ 2020-03-09 18:44:23,282 - DEBUG - START DEBUG
+ 2020-03-09 18:44:23,514 - DEBUG - ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'close_approach_date', 'distance', 'miss_distance_kilometers', 'neo_name']
+ 2020-03-09 18:44:58,623 - DEBUG - START DEBUG
+ 2020-03-09 18:44:58,627 - DEBUG - START DEBUG
+ 2020-03-09 18:44:58,861 - DEBUG - ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'close_approach_date', 'distance', 'miss_distance_kilometers', 'neo_name']
+ 2020-03-09 19:03:33,500 - DEBUG - START DEBUG
+ 2020-03-09 19:03:33,526 - DEBUG - START DEBUG
+ 2020-03-09 19:03:33,758 - DEBUG - ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'diameter', 'diameter_min_km', 'id', 'is_hazardous', 'is_potentially_hazardous_asteroid', 'name', 'orbits', 'update_orbits']
+ 2020-03-09 19:03:33,758 - DEBUG - ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', 'diameter', 'diameter_min_km', 'id', 'is_hazardous', 'is_potentially_hazardous_asteroid', 'name', 'orbits', 'update_orbits']
+ 2020-03-09 19:25:54,522 - DEBUG - START DEBUG
+ 2020-03-09 19:25:54,526 - DEBUG - START DEBUG
+ 2020-03-09 19:26:59,577 - DEBUG - START DEBUG
+ 2020-03-09 19:26:59,581 - DEBUG - START DEBUG
+ 2020-03-10 19:00:56,835 - DEBUG - START DEBUG
+ 2020-03-10 19:00:56,911 - DEBUG - START DEBUG
+ 2020-03-10 19:01:26,216 - DEBUG - START DEBUG
+ 2020-03-10 19:01:26,220 - DEBUG - START DEBUG
+ 2020-03-10 19:01:56,744 - DEBUG - START DEBUG
+ 2020-03-10 19:01:56,748 - DEBUG - START DEBUG
+ 2020-03-10 19:03:23,865 - DEBUG - START DEBUG
+ 2020-03-10 19:03:23,867 - DEBUG - START DEBUG
+ 2020-03-10 19:03:51,026 - DEBUG - START DEBUG
+ 2020-03-10 19:03:51,029 - DEBUG - START DEBUG

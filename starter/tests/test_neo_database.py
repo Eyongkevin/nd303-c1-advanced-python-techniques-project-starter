@@ -1,7 +1,7 @@
 import pathlib
 import unittest
 
-from database import NEODatabase
+from database import  NEODatabase
 from search import Query, NEOSearcher
 
 

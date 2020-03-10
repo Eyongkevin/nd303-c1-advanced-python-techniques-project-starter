@@ -34,7 +34,7 @@ import sys
 from datetime import datetime
 
 from exceptions import UnsupportedFeature
-from database import NEODatabase
+from database import  NEODatabase
 from search import Query, NEOSearcher
 from writer import OutputFormat, NEOWriter
 

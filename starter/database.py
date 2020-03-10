@@ -1,4 +1,6 @@
 from models import OrbitPath, NearEarthObject
+#from models import OrbitPath, NearEarthObject
+import csv  # Library to read csv files
 
 
 class NEODatabase(object):
@@ -16,6 +18,18 @@ class NEODatabase(object):
         """
         # TODO: What data structures will be needed to store the NearEarthObjects and OrbitPaths?
         # TODO: Add relevant instance variables for this.
+        self.filename = filename
+        self.NearEarthObjects = dict()
+        self.OrbitPaths = dict()
+
+    @staticmethod
+    def to_bool(str_bool):
+        if str_bool == 'False':
+            return False
+        elif str_bool == 'True':
+            return True
+        else:
+            return None
 
     def load_data(self, filename=None):
         """
@@ -33,6 +47,36 @@ class NEODatabase(object):
         filename = filename or self.filename
 
         # TODO: Load data from csv file.
-        # TODO: Where will the data be stored?
+        with open(filename) as open_file:
+            datas = csv.DictReader(open_file, delimiter=",")
+            datas = list(datas)
+
+            # TODO: Where will the data be stored?
+            
+            
+            for data in datas:
+                neoObj = NearEarthObject(neo_reference_id=data['id'],
+                                                      name=data['name'],
+                                                      diameter = float(data['estimated_diameter_min_kilometers']),
+                                                      is_hazardous = NEODatabase.to_bool(data['is_potentially_hazardous_asteroid']
+                                                     ))
+                
+                orbitPath = OrbitPath(name = data['name'],
+                                      miss_distance_km = float(data['miss_distance_kilometers']), 
+                                      orbit_date = data['close_approach_date'])
+                
+                # - Storing a dict of the Near Earth Object name to the single instance of NearEarthObject
+                idx_name = data['name']
+                if not idx_name in self.OrbitPaths:
+                    self.OrbitPaths[idx_name] = neoObj
+                    neoObj.update_orbits(orbitPath)
+                    
+                # - Storing a dict of orbit date to list of NearEarthObject instances   
+                idx_date = data['close_approach_date']
+                if idx_date in self.NearEarthObjects:
+                    self.NearEarthObjects[idx_date] += [neoObj]
+                else:
+                    self.NearEarthObjects[idx_date] = [neoObj]
+
 
         return None
