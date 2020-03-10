@@ -1,2 +1,4 @@
 *.ipynb
 env
+.DS_Store
+.vscode
