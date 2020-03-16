@@ -3,7 +3,7 @@ from enum import Enum
 import random
 import operator
 
-from exceptions import UnsupportedFeature
+from exceptions import UnsupportedFeature,ArgDatesInputChoiceError
 from models import NearEarthObject, OrbitPath
 
 import logging
@@ -48,10 +48,10 @@ class Query(object):
         """
         # TODO: What instance variables will be useful for storing on the Query object?
         self.number = kwargs['number']
-        self.date = kwargs['date'] if 'date' in kwargs else None
-        self.start_date = kwargs['start_date'] if 'start_date' in kwargs else None
-        self.end_date = kwargs['end_date']  if 'end_date' in kwargs else None
-        self.filters = kwargs['filter'] if 'filter' in kwargs else None
+        self.date = kwargs.get('date', None) 
+        self.start_date = kwargs.get('start_date', None) 
+        self.end_date = kwargs.get('end_date', None)  
+        self.filters = kwargs.get('filter', None)
         self.return_object = kwargs['return_object']
 
 
@@ -64,10 +64,14 @@ class Query(object):
         """
 
         # TODO: Translate the query parameters into a QueryBuild.Selectors object
-        if (self.date):
+        if (self.date and (not self.start_date and not self.end_date )):
             date_search = Query.DateSearch('equals',self.date)
-        else:
+        
+        elif (self.start_date and self.end_date and not self.date):
             date_search = Query.DateSearch('between',[self.start_date, self.end_date])
+        else:
+            raise ArgDatesInputChoiceError("Either --date should be given or both --start_date and --end_date are given")
+
         selector = Query.Selectors(date_search, self.number, self.filters, Query.ReturnObjects[self.return_object])
         return selector
 
@@ -222,12 +226,7 @@ class NEOSearcher(object):
         return all_orbits
 
     def return_neo_from_orbits(self, orbits):
-        return [self.db.OrbitPaths[orbit.neo_name] for orbit in orbits ]
-
-
-
-
-        
+        return [self.db.OrbitPaths[orbit.neo_name] for orbit in orbits ]    
         
 
     def get_objects(self, query):

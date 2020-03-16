@@ -28,6 +28,9 @@ class FormatHasINvalidValueError(Error):
     def __init__(self, msg = "FormatHasINvalidValueError occured"):
         super().__init__(msg)
 
+class ArgDatesInputChoiceError(Error):
+    def __init__(self, msg = "ArgDatesInputChoiceError occured"):
+        super().__init__(msg)
 
 
 # TODO: See how you can add more information about the exception, like error line number where the exception was raised.

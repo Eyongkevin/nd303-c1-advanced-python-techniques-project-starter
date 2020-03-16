@@ -110,7 +110,6 @@ class NEOWriter(object):
                 # NEO Object
                 if hasattr(data[0], 'neo_name'):
                     print("Orbit")
-                    print(data[0].__dict__.keys())
                     try:
                         writer = csv.DictWriter(neo_results, fieldnames=self.orbitPath_fields)
                         writer.writeheader()
@@ -131,7 +130,6 @@ class NEOWriter(object):
 
                 elif hasattr(data[0], 'name'):
                     print("NEO")
-                    print(data[0].__dict__.keys())
                     try:
                         writer = csv.DictWriter(neo_results, fieldnames=self.neo_fields)
                         writer.writeheader()

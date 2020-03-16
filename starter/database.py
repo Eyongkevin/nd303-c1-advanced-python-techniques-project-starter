@@ -18,6 +18,7 @@ class NEODatabase(object):
         """
         # TODO: What data structures will be needed to store the NearEarthObjects and OrbitPaths?
         # TODO: Add relevant instance variables for this.
+
         self.filename = filename
         self.NearEarthObjects = dict()
         self.OrbitPaths = dict()
@@ -45,9 +46,11 @@ class NEODatabase(object):
             raise Exception('Cannot load data, no filename provided')
 
         filename = filename or self.filename
+        # TODO: Check if it is a file and if it has the extension `csv`
 
         # TODO: Load data from csv file.
         with open(filename) as open_file:
+            # TODO: Determine the exception here if fail to read file and handle it with a 'try: except: except'
             datas = csv.DictReader(open_file, delimiter=",")
             datas = list(datas)
 
